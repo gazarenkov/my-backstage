@@ -3,7 +3,9 @@ app:
   # If not provided (with yarn dev --config ...), error occured on start:
   # "ForwardedError: Plugin 'auth' startup failed; caused by Error:
   # Missing required config value at 'app.baseUrl' in 'app-config.production.yaml'"
-  baseUrl: http://localhost:3000
+
+  #baseUrl: http://localhost:3000
+  baseUrl: http://0.0.0.0:3000
 
 backend:
   # Note that the baseUrl should be the URL that the browser and other clients
