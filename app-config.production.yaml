@@ -5,27 +5,27 @@ app:
   # Missing required config value at 'app.baseUrl' in 'app-config.production.yaml'"
 
   #baseUrl: http://localhost:3000
-  baseUrl: http://0.0.0.0:3000
+  baseUrl: http://0.0.0.0:8080
 
-backend:
-  # Note that the baseUrl should be the URL that the browser and other clients
-  # should use when communicating with the backend, i.e. it needs to be
-  # reachable not just from within the backend host, but from all of your
-  # callers. When its value is "http://localhost:7007", it's strictly private
-  # and can't be reached by others.
-  baseUrl: http://localhost:7007
-  # The listener can also be expressed as a single <host>:<port> string. In this case we bind to
-  # all interfaces, the most permissive setting. The right value depends on your specific deployment.
-  listen: ':7007'
-  csp:
-    connect-src: [ "'self'", 'http:', 'https:' ]
-    # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
-    # Default Helmet Content-Security-Policy values can be removed by setting the key to false
-  cors:
-    #origin: http://localhost:3000
-    origin: http://0.0.0.0:3000
-    methods: [ GET, HEAD, PATCH, POST, PUT, DELETE ]
-    credentials: true
+#backend:
+#  # Note that the baseUrl should be the URL that the browser and other clients
+#  # should use when communicating with the backend, i.e. it needs to be
+#  # reachable not just from within the backend host, but from all of your
+#  # callers. When its value is "http://localhost:7007", it's strictly private
+#  # and can't be reached by others.
+#  baseUrl: http://localhost:7007
+#  # The listener can also be expressed as a single <host>:<port> string. In this case we bind to
+#  # all interfaces, the most permissive setting. The right value depends on your specific deployment.
+#  listen: ':7007'
+#  csp:
+#    connect-src: [ "'self'", 'http:', 'https:' ]
+#    # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
+#    # Default Helmet Content-Security-Policy values can be removed by setting the key to false
+#  cors:
+#    #origin: http://localhost:3000
+#    origin: http://0.0.0.0:8080
+#    methods: [ GET, HEAD, PATCH, POST, PUT, DELETE ]
+#    credentials: true
 
   # config options: https://node-postgres.com/apis/client
 #  database:
